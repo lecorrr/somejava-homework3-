@@ -8,12 +8,12 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("input year");
 		int n = sc.nextInt();
-		if (n % 4 == 0 || n % 400 == 0) {
+		if (n % 400 == 0) {
 			System.out.println("leap year");
 		} else if (n % 100 == 0) {
 			System.out.println("not leap year");
-		} else {
-			System.out.println("not leap year");
+		} else if (n % 4 == 0) {
+			System.out.println("leap year");
 		}
 	}
 }
